@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EggSnap Legal</title>
+  <meta name="description" content="Official legal documents for the EggSnap app." />
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --link: #f59e0b;
+      --bg: #ffffff;
+      --card: #fafafa;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0 0 40px 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 18px;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+    }
+
+    .card h2 {
+      margin: 0 0 6px 0;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    a.inline {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a.inline:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    <!-- Logo -->
+    <img src="./EggSnap-Starting-Icon.png" alt="EggSnap Logo" class="logo" />
+
+    <h1>EggSnap Legal</h1>
+    <p class="subtitle">
+      Official legal documents for the EggSnap app.
+    </p>
+
+    <div class="card">
+      <a href="./privacy.html">
+        <h2>Privacy Policy</h2>
+        <p>Learn how we collect, use, and protect your information.</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="./terms.html">
+        <h2>Terms of Service</h2>
+        <p>Read the terms governing the use of EggSnap.</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="./privacy-choices.html">
+        <h2>User Privacy Choices</h2>
+        <p>Understand your data rights and how to manage your information.</p>
+      </a>
+    </div>
+
+    <footer>
+      <p>
+        Contact: <a class="inline" href="mailto:support@eggsnap.app">support@eggsnap.app</a>
+      </p>
+      <p>© <span id="year"></span> EggSnap. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
